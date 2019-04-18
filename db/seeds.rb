@@ -8,10 +8,10 @@
 
 Company.create(name: 'SeedCo Inc.', add_ln1: '246 Fake St.', city_state_zip: 'Ashtabula, OH 44004')
 
-Company.create(name: 'dash', add_ln1: '357 No Lane', city_state_zip: 'Greensboro, NC 27477', role: "#{ENV['BILLING_TYPE']}")
+Company.create(name: 'PlusEquals', add_ln1: '357 No Lane', city_state_zip: 'Greensboro, NC 27477')
 
 User.create(f_name: 'Jim', l_name: 'Jim', email: 'jim@jim.com',
-            password: 'password', company_id: 2, role: 'client')
+            password: 'password', company_id: 2, role: "#{ENV['BILLING_TYPE']}")
 
 User.create(f_name: 'Joseph', l_name: 'Seedman', email: 'jseedman@gmail.com',
             password: Faker::Company.buzzword, company_id: 3, role: 'client')
