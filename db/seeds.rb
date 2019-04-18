@@ -14,13 +14,13 @@ User.create(f_name: 'Jim', l_name: 'Jim', email: 'jim@jim.com',
             password: 'password', company_id: 2, role: "#{ENV['BILLING_TYPE']}")
 
 User.create(f_name: 'Joseph', l_name: 'Seedman', email: 'jseedman@gmail.com',
-            password: Faker::Company.buzzword, company_id: 3, role: 'client')
+            password: Faker::Company.buzzword, company_id: 1, role: 'client')
 
 10.times do
   Invoice.create(
     billing_start: Faker::Date.backward(5),
     contact: 'Joseph Seedman',
-    company_id: 3,
+    company_id: 1,
     project: Faker::Job.key_skill,
     paid: true
   )
@@ -30,7 +30,7 @@ end
   Invoice.create(
     billing_start: Faker::Date.backward(5),
     contact: 'Joseph Seedman',
-    company_id: 3,
+    company_id: 1,
     project: Faker::Job.key_skill,
     paid: false
   )
