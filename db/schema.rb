@@ -36,14 +36,14 @@ ActiveRecord::Schema.define(version: 20190418012712) do
     t.date     "billing_end"
     t.string   "contact"
     t.integer  "company_id"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.integer  "task_id"
     t.string   "notes"
     t.float    "subtotal"
     t.float    "adjustments",   default: 0.0
     t.float    "total"
-    t.boolean  "paid",          default: false
+    t.boolean  "paid"
     t.string   "project"
     t.date     "due"
     t.index ["company_id"], name: "index_invoices_on_company_id"
