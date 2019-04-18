@@ -70,7 +70,7 @@ Rails.application.configure do
     # :authentication => :plain,
     :user_name              => ENV['SENDGRID_USERNAME'],
     :password               => ENV['SENDGRID_PASSWORD'],
-    :domain                 => 'payjim.herokuapp.com',
+    :domain                 => 'payjim-demo.herokuapp.com',
     :address                => 'smtp.sendgrid.net',
     :port                   => 587,
     :authentication         => :plain,
