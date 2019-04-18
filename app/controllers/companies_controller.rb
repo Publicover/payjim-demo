@@ -27,7 +27,7 @@ class CompaniesController < ApplicationController
   end
 
   def update
-    if @company.update
+    if @company.update(company_params)
       redirect_to @company
     else
       render 'edit'
@@ -46,6 +46,6 @@ class CompaniesController < ApplicationController
     end
 
     def company_params
-      params.require(:company).permit(:name)
+      params.require(:company).permit(:name, :add_ln1, :add_ln2, :suite, :city_state_zip)
     end
 end

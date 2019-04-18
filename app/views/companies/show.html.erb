@@ -3,6 +3,8 @@
 
 <center>
   <h1>COMPANY: <%= @company.name %></h1>
+  <p><%= link_to 'Edit this company', edit_company_path(@company) %></p>
+  <%= break_the_lines(company_address(@company)) %><br />
   <ul>
     <h1>USERS</h1>
     <% @company.users.each do |user| %>
