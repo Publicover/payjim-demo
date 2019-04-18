@@ -1,0 +1,29 @@
+<center>
+
+
+<div class='blurb'>
+  <h4>Invoices for <%= current_user.f_name %> <%= current_user.l_name %></h4>
+</div>
+
+<div class='container'>
+
+
+    <% if current_user.role == "#{ENV['BILLING_TYPE']}" %>
+      <%= render 'admin_index' %>
+    <% else %>
+      <% if @current_invoices.count > 0 %>
+        <%= render 'current_index' %>
+      <% else %>
+        <%= render 'no_current' %>
+      <% end %>
+    <% end %>
+<br />
+    <% if current_user.role != "#{ENV['BILLING_TYPE']}" %>
+      <% if @paid_invoices.count > 0 %>
+        <%= render 'paid_index' %>
+      <% else %>
+        <%= render 'no_paid' %>
+      <% end %>
+    <% end %>
+
+</center>

@@ -1,0 +1,30 @@
+<div class='row'>
+  <div class='col-4'></div>
+  <div class='col-4'><h4>PAST INVOICES</h4></div>
+  <div class='col-4'></div>
+</div>
+
+<div class='row'>
+  <% @paid_invoices.each do |invoice| %>
+    <p>
+      <div class='col-4 inv-index'>
+        <div class='card inv-paid'>
+          <div class='card-body'>
+            <div class='card-title'>
+              <%= link_to "INVOICE NO: #{invoice.id}", invoice_path(invoice) %>
+            </div>
+            <ul class='list-unstyled'>
+              <li class='card-text'>PAID: <%= invoice.due.to_formatted_s(:long) %></li>
+              <li class='card-text'><%= invoice.company.name %></li>
+              <li class='card-text'><%= invoice.project %></li>
+              <% if admin? %>
+                <li class='card-text'>
+                  <%= link_to 'Update this invoice', edit_invoice_path(invoice) %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>

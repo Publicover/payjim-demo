@@ -1,0 +1,1064 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.9ms)[0m  [1m[31mDELETE FROM "companies";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'companies';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "entries";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'entries';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'users';[0m
+  [1m[35m (1.1ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "tasks";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'tasks';[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "invoices";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'invoices';[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by PasswordResetsController#new as HTML
+  Rendering password_resets/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered password_resets/new.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:41:59 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:41:59 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered partials/_header.html.erb (1.8ms)
+Completed 200 OK in 257ms (Views: 254.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "password_digest") VALUES (?, ?, ?)[0m  [["created_at", "2019-04-18 18:41:59.984736"], ["updated_at", "2019-04-18 18:41:59.984736"], ["password_digest", "$2a$04$Zz1PuY0q470ZOfYg48TuOeJnjb3T9Jmnbust6U0rgOEg2mniix6ju"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "an arbitrary value"], ["updated_at", "2019-04-18 18:41:59.986424"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "an arbitrary value"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "AN ARBITRARY VALUE"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.000060"], ["updated_at", "2019-04-18 18:42:00.000060"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "jim only"], ["created_at", "2019-04-18 18:42:00.001555"], ["updated_at", "2019-04-18 18:42:00.001555"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mInvoice Load (0.1ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mInvoice Load (0.0ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.015537"], ["updated_at", "2019-04-18 18:42:00.015537"], ["password_digest", "$2a$04$udtXQjkDt26ZufRLrcX21uPq2NDmpvk9aV/LkmApIApO9sHKko2z."], ["company_id", 2], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.019081"], ["updated_at", "2019-04-18 18:42:00.019081"], ["password_digest", "$2a$04$2ZoaOlnVpmupukdrU8bBAO9rpfzy7fyhMfXy20rW0ttJpZS6yjak."], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"yup@yup.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/invoices
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.4ms)
+  Rendered invoices/index.html.erb within layouts/application (6.0ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.3ms)
+  Rendered invoices/index.html.erb within layouts/application (5.5ms)
+  Rendered partials/_header.html.erb (0.6ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.096864"], ["updated_at", "2019-04-18 18:42:00.096864"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "jim only"], ["created_at", "2019-04-18 18:42:00.098590"], ["updated_at", "2019-04-18 18:42:00.098590"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mInvoice Load (0.0ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mInvoice Load (0.0ms)[0m  [1m[34mSELECT  "invoices".* FROM "invoices" WHERE "invoices"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.107669"], ["updated_at", "2019-04-18 18:42:00.107669"], ["password_digest", "$2a$04$pSgUxl6FZT9IKJov2TPgRudZyE9Qm.IUZGoVIXI.TRWDj6zpbvzV2"], ["company_id", 2], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.111274"], ["updated_at", "2019-04-18 18:42:00.111274"], ["password_digest", "$2a$04$H/e4Vz.PF0qFlFLJKXPdl.RmJAVk83P4GijHtloZjbCXk43YyNC3."], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.1ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (3.1ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.1ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE "invoices"."paid" = ?[0m  [["paid", "f"]]
+  [1m[36mInvoice Load (0.1ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE "invoices"."paid" = ?[0m  [["paid", "t"]]
+  Rendered invoices/_admin_index.html.erb (1.5ms)
+  Rendered invoices/index.html.erb within layouts/application (4.1ms)
+  Rendered partials/_admin_header.html.erb (0.7ms)
+  Rendered partials/_header.html.erb (3.3ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.183056"], ["updated_at", "2019-04-18 18:42:00.183056"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.187398"], ["updated_at", "2019-04-18 18:42:00.187398"], ["password_digest", "$2a$04$DaJPiPkfbEgEdkNM6UmjQudi/sDhERDvXU/EppGtWizpwzxCvg2a6"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.190910"], ["updated_at", "2019-04-18 18:42:00.190910"], ["password_digest", "$2a$04$YeMAKAasWSys/PUPHeUn0.um0npUU9qmrVMYTSOoCwdB6Rx7o6mOK"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+Started GET "/users" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by UsersController#index as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :logged_in_as_admin? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.0ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (4.3ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+Started GET "/users" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.9ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+Started GET "/users/new" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  Rendered users/new.html.erb within layouts/application (25.7ms)
+  Rendered partials/_admin_header.html.erb (0.6ms)
+  Rendered partials/_header.html.erb (3.4ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.1ms)
+Started POST "/users" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"f_name"=>"someone", "l_name"=>"someone else", "email"=>"somebody@somewhere.com", "password"=>"[FILTERED]", "role"=>"client", "company_id"=>"1"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "somebody@somewhere.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "someone"], ["l_name", "someone else"], ["email", "somebody@somewhere.com"], ["created_at", "2019-04-18 18:42:00.327345"], ["updated_at", "2019-04-18 18:42:00.327345"], ["password_digest", "$2a$04$YnZ/x0kMmwc7IQjEqC34lOxncJdsodOEIAM9VvGMEg69TfQwVrHB6"], ["company_id", 1], ["role", "client"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/3
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+Started GET "/users/3" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered partials/_admin_header.html.erb (0.7ms)
+  Rendered partials/_header.html.erb (3.3ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.348403"], ["updated_at", "2019-04-18 18:42:00.348403"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.353036"], ["updated_at", "2019-04-18 18:42:00.353036"], ["password_digest", "$2a$04$cyO2aZnVtLXxnJqzl71ih.arnPHPKPwUtj3kUGDbHBWYnN4ASND6."], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.357189"], ["updated_at", "2019-04-18 18:42:00.357189"], ["password_digest", "$2a$04$NXB6YRhKm0x7KJZmQr07V.bTF7boFK74bEcKhAmR.OjX4IZfZsbnW"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+Started GET "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#index as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :logged_in_as_admin? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (0.9ms)
+  Rendered partials/_admin_header.html.erb (0.4ms)
+  Rendered partials/_header.html.erb (2.7ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+Started GET "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_admin_header.html.erb (0.4ms)
+  Rendered partials/_header.html.erb (2.7ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.1ms)
+Started GET "/companies/new" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#new as HTML
+  Rendering companies/new.html.erb within layouts/application
+  Rendered companies/new.html.erb within layouts/application (1.5ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.9ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+Started POST "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "company"=>{"name"=>"whatever"}, "commit"=>"Create Company"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "whatever"], ["created_at", "2019-04-18 18:42:00.451872"], ["updated_at", "2019-04-18 18:42:00.451872"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.3ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.8ms)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.486668"], ["updated_at", "2019-04-18 18:42:00.486668"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.491031"], ["updated_at", "2019-04-18 18:42:00.491031"], ["password_digest", "$2a$04$hPZbFVn6v0kYciRV8nZo0OUZs9JPb0M/bBN4xSDWlKbjTMuR6ZHT."], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.494289"], ["updated_at", "2019-04-18 18:42:00.494289"], ["password_digest", "$2a$04$lyBG6eLCgA90lQEIKO4XMuhMdptKppaOIUIvf8fgHNKoyfIfd5CYy"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+Started GET "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#index as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :logged_in_as_admin? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (1.1ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_admin_header.html.erb (0.4ms)
+  Rendered partials/_header.html.erb (2.7ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[36mInvoice Load (0.2ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE "invoices"."paid" = ?[0m  [["paid", "f"]]
+  [1m[36mInvoice Load (0.1ms)[0m  [1m[34mSELECT "invoices".* FROM "invoices" WHERE "invoices"."paid" = ?[0m  [["paid", "t"]]
+  Rendered invoices/_admin_index.html.erb (1.7ms)
+  Rendered invoices/index.html.erb within layouts/application (5.4ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (3.0ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+Started GET "/invoices/new" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by InvoicesController#new as HTML
+  Rendering invoices/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  Rendered invoices/_form.html.erb (9.6ms)
+  Rendered invoices/new.html.erb within layouts/application (11.7ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.6ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+Started POST "/invoices" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by InvoicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "invoice"=>{"project"=>"", "billing_start"=>"01/01/2018", "billing_end"=>"01/02/2018", "contact"=>"some guy", "company_id"=>"1", "notes"=>"", "adjustments"=>"0.0", "paid"=>"0"}, "commit"=>"Create Invoice"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering invoices/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  Rendered invoices/_form.html.erb (4.3ms)
+  Rendered invoices/new.html.erb within layouts/application (6.6ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.6ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.636783"], ["updated_at", "2019-04-18 18:42:00.636783"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.641337"], ["updated_at", "2019-04-18 18:42:00.641337"], ["password_digest", "$2a$04$epZZuJR0qheTTG6n.uQg/Oqb3TOAtwrBokeoQmeyzllO8uCo1y0gy"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.645037"], ["updated_at", "2019-04-18 18:42:00.645037"], ["password_digest", "$2a$04$Ol5bTCAp2pEC27v/OUNKrOXziPB4dvHioVTmCJYV92TV5LBHq534q"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (1.1ms)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+Started GET "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#index as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :logged_in_as_admin? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (0.9ms)
+  Rendered partials/_admin_header.html.erb (0.8ms)
+  Rendered partials/_header.html.erb (3.4ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+Started GET "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#index as HTML
+  Rendering companies/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  Rendered companies/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.7ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.734535"], ["updated_at", "2019-04-18 18:42:00.734535"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.738538"], ["updated_at", "2019-04-18 18:42:00.738538"], ["password_digest", "$2a$04$2f3yevOSsDjlNt7Erv8mOO4N11nNi2o75VbnB4T7o3n0YQLc62KkC"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.742525"], ["updated_at", "2019-04-18 18:42:00.742525"], ["password_digest", "$2a$04$1CxweU9D2cyqyWjqhU8iaePs9KWvD02sCxUf.J0YbhQ9g7ja3Es/m"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+Started GET "/companies" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by CompaniesController#index as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :logged_in_as_admin? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.786249"], ["updated_at", "2019-04-18 18:42:00.786249"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.790708"], ["updated_at", "2019-04-18 18:42:00.790708"], ["password_digest", "$2a$04$9c7uWNpeRy9xgI07FXhAceqmbgoDgIvH9BzwPowvSqNSR4hMgYlg."], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.794587"], ["updated_at", "2019-04-18 18:42:00.794587"], ["password_digest", "$2a$04$PjQhcxaqux4wnUJdXdGW1.mjrF30SPRj18KtctEs1Bd8m5JvUY1PO"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_admin_header.html.erb (0.5ms)
+  Rendered partials/_header.html.erb (2.8ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+Started GET "/users" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_admin_header.html.erb (0.4ms)
+  Rendered partials/_header.html.erb (2.7ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.854905"], ["updated_at", "2019-04-18 18:42:00.854905"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.859534"], ["updated_at", "2019-04-18 18:42:00.859534"], ["password_digest", "$2a$04$yBBnzdvXrzTMWWL9KV6m6uNn0aPFfs6dUNLYKC7MweKFa4yXH6fZ6"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.863394"], ["updated_at", "2019-04-18 18:42:00.863394"], ["password_digest", "$2a$04$0rDV73zP4I5sn4Nd/Mwg1uIBnwEJjKDeA2vP8MexUekFJbjOZj1Yy"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "thejim@jim.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND ("users"."id" != ?) LIMIT ?[0m  [["email", "yup@yup.com"], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.889421"], ["updated_at", "2019-04-18 18:42:00.889421"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.893635"], ["updated_at", "2019-04-18 18:42:00.893635"], ["password_digest", "$2a$04$6jr7x/r.QpsQJc1rYTxfCuQkko3FTzSSs5lzMqk3qjGiSqrL0nC.W"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.896943"], ["updated_at", "2019-04-18 18:42:00.896943"], ["password_digest", "$2a$04$K2SpTGLkJnC/wVpsEHSLwuErvI5kiNJMPNtiYV6I4x1rGlTj6/C.m"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.9ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>" ", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " "], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.932836"], ["updated_at", "2019-04-18 18:42:00.932836"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.937136"], ["updated_at", "2019-04-18 18:42:00.937136"], ["password_digest", "$2a$04$32.INGj6hdNgnohjNgr9.uKVyOEAA/P.DvoJus.qjBrFZnnNkgs9m"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.940788"], ["updated_at", "2019-04-18 18:42:00.940788"], ["password_digest", "$2a$04$C2mP98PEpVucs6a76/MRauTo16xBeSCbj9SzV86NVqonBeONbh2q2"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:00.983528"], ["updated_at", "2019-04-18 18:42:00.983528"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:00.987801"], ["updated_at", "2019-04-18 18:42:00.987801"], ["password_digest", "$2a$04$dxGzAlr24Wl7EmLIoenaSuP1HRmVuPkMo1U7HD17NT6DTazvLXvDW"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:00.991376"], ["updated_at", "2019-04-18 18:42:00.991376"], ["password_digest", "$2a$04$FCmSoJO8tS6M6rxsqlaeb.DRB8mWBGKXaVDwBdkkwR0tB/29NzfNC"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"yup@yup.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/invoices
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.3ms)
+  Rendered invoices/index.html.erb within layouts/application (6.7ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:01.036959"], ["updated_at", "2019-04-18 18:42:01.036959"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "the"], ["l_name", "jim"], ["email", "thejim@jim.com"], ["created_at", "2019-04-18 18:42:01.041832"], ["updated_at", "2019-04-18 18:42:01.041832"], ["password_digest", "$2a$04$MFMDmE4I2O/hRsfDxcM80Onv8JK1NhhTAoCrOAZGZBEGAvGJ7GdLK"], ["company_id", 1], ["role", "jim"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:01.045533"], ["updated_at", "2019-04-18 18:42:01.045533"], ["password_digest", "$2a$04$SsHXDpzmIQWof8e.uW7ycOxP6essUa04qDh06vC8YaKLiSeopvSAS"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"thejim@jim.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.0ms)
+  Rendered partials/_admin_header.html.erb (0.4ms)
+  Rendered partials/_header.html.erb (2.6ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:01.093668"], ["updated_at", "2019-04-18 18:42:01.093668"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "jim only"], ["created_at", "2019-04-18 18:42:01.095479"], ["updated_at", "2019-04-18 18:42:01.095479"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 999], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:01.104812"], ["updated_at", "2019-04-18 18:42:01.104812"], ["password_digest", "$2a$04$9.x/qmvQmdzqlohMlFb/kuNtZsYCpNaUsKFkyeH0xVx3TS2cO5WDy"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (0.9ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"yup@yup.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/invoices
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.3ms)
+  Rendered invoices/index.html.erb within layouts/application (5.7ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.4ms)
+  Rendered invoices/index.html.erb within layouts/application (5.7ms)
+  Rendered partials/_header.html.erb (1.1ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:01.181546"], ["updated_at", "2019-04-18 18:42:01.181546"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "jim only"], ["created_at", "2019-04-18 18:42:01.183068"], ["updated_at", "2019-04-18 18:42:01.183068"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 999], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thejim@jim.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:01.191744"], ["updated_at", "2019-04-18 18:42:01.191744"], ["password_digest", "$2a$04$XVqKnwkn1egiraVXlMdJh.po1B/cXEMhnbSbtvG/EbEKqqNAOLBya"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"yup@yup.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/invoices
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.3ms)
+  Rendered invoices/index.html.erb within layouts/application (5.3ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.4ms)
+  Rendered invoices/index.html.erb within layouts/application (6.2ms)
+  Rendered partials/_header.html.erb (0.8ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "fake company"], ["created_at", "2019-04-18 18:42:01.257235"], ["updated_at", "2019-04-18 18:42:01.257235"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("f_name", "l_name", "email", "created_at", "updated_at", "password_digest", "company_id", "role") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["f_name", "blap"], ["l_name", "whoever"], ["email", "yup@yup.com"], ["created_at", "2019-04-18 18:42:01.261589"], ["updated_at", "2019-04-18 18:42:01.261589"], ["password_digest", "$2a$04$12Q8zY38rhaPLJjq4eHrruWqUoyFDG4OmHH0n9j.6zmyfmN9zcRcO"], ["company_id", 1], ["role", "whatever"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by DashboardsController#index as HTML
+Redirected to http://www.example.com/login
+Filter chain halted as :logged_in? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"yup@yup.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yup@yup.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/invoices
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+Started GET "/invoices" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by InvoicesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCompany Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering invoices/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "f"], ["company_id", 1]]
+  Rendered invoices/_no_current.html.erb (0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "invoices" WHERE "invoices"."paid" = ? AND "invoices"."company_id" = ?[0m  [["paid", "t"], ["company_id", 1]]
+  Rendered invoices/_no_paid.html.erb (0.3ms)
+  Rendered invoices/index.html.erb within layouts/application (5.4ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+Started GET "/users" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by UsersController#index as HTML
+Redirected to http://www.example.com/
+Filter chain halted as :logged_in_as_admin? rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-04-18 14:42:01 -0400
+Processing by DashboardsController#index as HTML
+  Rendering dashboards/index.html.erb within layouts/application
+  Rendered dashboards/index.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m

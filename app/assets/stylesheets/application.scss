@@ -1,0 +1,164 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import "bootstrap";
+
+html body {
+  background-image: url('/pink-template.jpg');
+  // background-image: url('/thrills.jpg');
+  // background-position: cover;
+  height: 100%;
+  // width: 100%;
+  // background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#notice {
+ color: black;
+ // background-color: white;
+
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#invoice_show {
+  width: 210mm;
+}
+
+.client-login {
+  margin-top: 10%;
+}
+
+.blurb {
+  margin: 30px;
+}
+
+.invoice-form {
+  background-color: white;
+}
+
+.btn {
+  border-radius: 12px;
+}
+
+.due {
+  font-weight: bold;
+}
+
+.inv-index {
+  margin-bottom: 2.5%;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif, Arial, serif;
+}
+
+.parallax {
+  background-image: url('/red-pen.jpg');
+
+  height: 650px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  border-radius: 0 !important;
+}
+
+.navbar {
+  background-color: '#10100E';
+}
+
+.pic-text {
+  margin-top: 5%;
+  color: white;
+}
+
+.pic-buttons {
+  position: absolute;
+  bottom: 60px;
+}
+
+.btn-space {
+  margin: 3%;
+}
+
+.wrapper {
+  display: block;
+  height: 65%;
+}
+
+.fancy-btn {
+  padding-top: 16;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #a11f1a;
+  border-width: 0px;
+}
+
+.navbar-trans {
+  // background-color: transparent !important;
+  background-color: #10100D;
+  border-color: transparent;
+	background-image: none;
+	box-shadow: none;
+}
+
+#myNavbar > li.nav-item.active > a {
+  color: #A11F1A;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.more-space-top {
+  padding-top: 15px;
+}
+// .transparent {
+//   border-width: 0px;
+//     -webkit-box-shadow: 0px 0px;
+//     box-shadow: 0px 0px;
+//     background-color: rgba(0,0,0,0.0);
+//     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+//     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+//     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+// }
+
+// .unpaid {
+//
+// }
+
+// table#t01 tr:nth-child(even) {
+//     background-color: #eee;
+// }
+// table#t01 tr:nth-child(odd) {
+//    background-color: #fff;
+// }
+
+// .bottom-align-text {
+//     position: absolute;
+//     bottom: 0;
+//     right: 5;
+//   }

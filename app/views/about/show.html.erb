@@ -1,0 +1,61 @@
+<div class='jumbotron parallax'>
+  <div class='wrapper pic-text'>
+    <div class='row'>
+      <div class='col-4'></div>
+      <div class='col-4'><center><h1>ABOUT</h1></center></div>
+      <div class='col-4'></div>
+    </div>
+  </div>
+
+  <div class='row pic-text'>
+    <% if admin? %>
+      <div class='col'>
+        <%= button_to 'ABOUT', about_path, method: :get, class: 'btn btn-secondary float-right' %>
+      </div>
+      <div class='col-1'></div>
+      <div class='col'>
+        <%= button_to 'INVOICES', invoices_path, method: :get, class: 'btn btn-secondary' %>
+      </div>
+    <% else %>
+      <div class='col'>
+        <center>
+        <%= button_to 'INVOICES', invoices_path, method: :get, class: 'btn btn-secondary' %>
+        </center>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+  <div class='bg'>
+    
+    <div class='row'>
+      <div class='col-4'>
+      </div>
+      <div class='col-4 blurb text-center'>
+        Hi, <%= @user.f_name %>. Thanks for visiting the app.
+      </div>
+      <div class='col-4'>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col-3'>
+      </div>
+      <div class='col-6 blurb text-center' >
+        <p>I built this because I got tired of managing my invoices through Google Sheets.</p>
+        <p>It's a lot easier this way.</p>
+        <p>If you have any questions, don't be afraid to
+          <%= mail_to "#{ENV['GMAILU']}", 'reach out' %>.</p>
+        <p>If you'd like to learn more about me, I'm on
+          <a href="<%= ENV['MY_GITHUB'] %>">github</a>
+          and <a href="<%= ENV['MY_LI'] %>">LinkedIn</a>.
+        </p>
+        <p>I also have an <%= link_to 'online portfolio', "https://publicoverpress.herokuapp.com/", target: :_blank %> you can look at.</p>
+        <p>Or I could email you a copy of <%= link_to 'my resume', resumes_new_path(id: current_user.id) %>.</p>
+      </div>
+    <div class='col-3'>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<h1>Tasks#index</h1>
+<p>Find me in app/views/tasks/index.html.erb</p>
+
+invoice id: <%= @invoice.id %>
+<% @tasks.each do |task| %>
+  <p><%= task.id %> |
+    <%= link_to 'Delete', invoice_task_path(@invoice.id, task.id),
+        method: :delete %></p>
+<% end %>

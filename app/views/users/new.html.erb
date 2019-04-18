@@ -1,0 +1,54 @@
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+<center>
+  <h1>Add a new client</h1>
+  <br />
+  <%= form_for @user do |f| %>
+
+    <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <p>
+          <%= pluralize(@user.errors.count, "error") %> prohibited
+          this article from being saved:
+        </p>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><center><%= msg %></li>
+        <% end %>
+      </div>
+    <% end %>
+
+    <p>
+      <%= f.label 'First Name' %>
+      <%= f.text_field :f_name %>
+    </p>
+
+    <p>
+      <%= f.label 'Last Name' %>
+      <%= f.text_field :l_name %>
+    </p>
+
+    <p>
+      <%= f.label 'Email' %>
+      <%= f.email_field :email %>
+    </p>
+
+    <p>
+      <%= f.label 'Password' %>
+      <%= f.password_field :password %>
+    </p>
+
+    <p>
+      <%= f.hidden_field :role, value: 'client' %>
+    </p>
+
+    <p>
+      <%= f.label 'Company' %>
+      <%= f.collection_select :company_id, Company.all, :id, :name, prompt: 'Select a company' %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</center>

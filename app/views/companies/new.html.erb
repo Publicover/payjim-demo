@@ -1,0 +1,31 @@
+<h1>Companies#new</h1>
+<p>Find me in app/views/companies/new.html.erb</p>
+
+<center>
+  Add a new company
+
+  <%= form_for @company do |f| %>
+
+    <% if @company.errors.any? %>
+      <div id="error_explanation">
+        <p>
+          <%= pluralize(@company.errors.count, "error") %> prohibited
+          this article from being saved:
+        </p>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><center><%= msg %></li>
+        <% end %>
+      </div>
+    <% end %>
+
+    <p>
+      <%= f.label 'Name' %>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+
+  <% end %>
+</center>

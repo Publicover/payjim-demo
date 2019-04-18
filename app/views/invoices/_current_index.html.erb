@@ -1,0 +1,23 @@
+<div class='row'>
+  <% @current_invoices.each do |invoice| %>
+    <div class='col-6 inv-index'>
+      <div class='card inv-current'>
+        <div class='card-body'>
+          <div class='card-title'>
+            <h3><%= link_to "INVOICE NO: #{invoice.id}", invoice_path(invoice) %></h3>
+          </div>
+          <ul class='list-unstyled'>
+            <li class='card-text due'><%= show_due(invoice.due) %></li>
+            <li class='card-text'><%= invoice.company.name %></li>
+            <li class='card-text'><%= invoice.project %></li>
+            <% if admin? %>
+              <li class='card-text'>
+                <%= link_to 'Update this invoice', edit_invoice_path(invoice) %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

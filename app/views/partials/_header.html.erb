@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-sm  navbar-dark navbar-trans sticky-top">
+  <ul class="navbar-nav justify-content-end ml-auto">
+
+    <a  class="navbar-brand text-white">pay Jim</a>
+    <button type="button" class="btn-sm navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <% if session[:user_role] == "#{ENV['BILLING_TYPE']}" %>
+        <%= render 'partials/admin_header' %>
+      <% end %>
+      <li class="nav-item <%= 'active' if current_page?(invoices_path) %>">
+        <%= link_to "My Invoices", invoices_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item <%= 'active' if current_page?(about_path) %>">
+        <%= link_to "About", about_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Log out", logout_path, method: :delete, class: "nav-link" %>
+      </li>
+    </div>
+  </ul>
+</nav>

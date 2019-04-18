@@ -1,0 +1,53 @@
+users
+  vendor
+  client_contact
+
+company
+
+assignment
+  title
+  code
+
+
+TODO:
+
+add everything to companies, invoices and tasks that finishes Invoices#show
+figure out how to number invoices so they're not weird for client
+styling from dana
+remove billing_end from invoices
+add description to invoice, make it separate from the one on task
+add PAID to invoices after they are paid, move them to bottom of list
+
+
+show only invoices that have not been paid
+give link to previously paid invoices
+
+dana:
+repeat print option below the invoice
+links at top invoice index, have return to invoice link first then print link
+convenient to have questions about this invoice, opens email or a form or my contact information or something
+integrate Google Wallet and Paypal Amazon Payments button at top or a sticky button
+unsplash.com stock photo for login page
+invoice#index(@user) kind of a little blurb about why you created it
+  'this software created by jim to solve need for whatever, if you want to liscence it or whatever'
+login
+  'contact me for a demo login if you're interested in the software'
+
+nice buttons: (print and login page)
+  rounded corners (not circle button round square)
+  nice color with nice font (use maybe gray from nav maybe two or three shades lighter)
+    white san-serif font
+  proportionatly scaled
+  a lot of breathing room
+make print invoice a button
+
+not dash creative call it like pay jim or something
+'put another link up there that's like hire jim or something that goes to another work page'
+large button bold font keep it all lowercase
+'dash billing' in navbar shouldn't be dark, bold links, make all upper or all lower
+invoice#index intro text: redo it (don't use 'should')
+
+invoice#index: change date worked to due date (which doesn't exist in the db yet)
+
+#TODO
+make header background transparent, have it sit on the jumbotron

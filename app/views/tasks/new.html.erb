@@ -1,0 +1,40 @@
+<h1>Tasks#new</h1>
+<p>Find me in app/views/tasks/new.html.erb</p>
+
+<center>
+  <%= form_for @task, :url => invoice_tasks_path(params[:invoice_id]) do |f| %>
+    <% if @task.errors.any? %>
+      <div id="error_explanation">
+        <p>
+          <%= pluralize(@task.errors.count, "error") %> prohibited
+          this article from being saved:
+        </p>
+        <% @task.errors.full_messages.each do |msg| %>
+          <li><center><%= msg %></li>
+        <% end %>
+      </div>
+    <% end %>
+
+    <div>
+      <%= f.label 'Description' %>
+      <%= f.text_field :description %>
+    </div>
+
+    <div>
+      <%= f.label 'Rate' %>
+      <%= f.number_field :rate %>
+    </div>
+
+    <div>
+      <%= f.label 'Hours' %>
+      <%= f.number_field :hours, step: 0.25 %>
+    </div>
+
+    <div>
+      <%= f.hidden_field :invoice_id, value: params[:invoice_id] %>
+    </div>
+
+    <%= f.submit %>
+  <% end %>
+  <%= link_to 'Cancel', :back %>
+</center>

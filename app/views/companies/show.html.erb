@@ -1,0 +1,12 @@
+<h1>Companies#show</h1>
+<p>Find me in app/views/companies/show.html.erb</p>
+
+<center>
+  <h1>COMPANY: <%= @company.name %></h1>
+  <ul>
+    <h1>USERS</h1>
+    <% @company.users.each do |user| %>
+      <li><%= user.email %></li>
+    <% end %>
+  </ul>
+</center>

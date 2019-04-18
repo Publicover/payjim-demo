@@ -1,0 +1,10 @@
+users log on
+they are taken to their company index page with invoice numbers and dates
+  listed by project name
+
+
+admin adds companies
+  companies get invoices
+    invoices have start and end dates
+  invoices have projects
+    projects have names

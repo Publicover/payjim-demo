@@ -1,0 +1,142 @@
+<center>
+  <div class='container'>
+    <div class='row'>
+      <div class='col text-center'>
+        <p><%= link_to 'Back to your invoices', invoices_path, class: 'noprint' %></p>
+      </div>
+      </div>
+      <p><%= button_to 'Print this invoice', invoices_path(@invoice), :onclick => 'window.print();return false;', class: 'noprint btn btn-secondary' %></p>
+      <p><%= mail_to "#{ENV['GMAILU']}", 'Questions about this invoice? Send me an email.', html_options = { subject: "Invoice #{@invoice.id} for #{current_user.f_name}", class: 'noprint' } %></p>
+      <% if admin? %>
+        <p><%= link_to 'Create a new task for this invoice', new_invoice_task_path(@invoice), class: 'noprint' %></p>
+        <p><%= link_to 'Delete this Invoice', invoice_path(@invoice), method: :delete, data: { confirm: 'You sure?' } %></p>
+        <p><%= link_to 'Update a note or adjustment', edit_invoice_path(@invoice) %></p>
+      <% end %>
+  </div>
+</center>
+
+<br />
+<div class='invoice-form'>
+<div class='container'>
+  <div class='row'>
+    <div class='col'>
+      <h4 class='more-space-top'>Invoice # <%=@invoice.id %></h4>
+      <p>
+        <%= @invoice.billing_start.to_formatted_s(:long) %><br />
+         through
+        <%= show_billing_end(@invoice.billing_end) %>
+      </p>
+    </div>
+    <div class='col text-right'>
+      <h4 class='more-space-top'>Due</h4>
+      <p>
+        <% if @invoice.due %>
+         <%= @invoice.due.to_formatted_s(:long) %>
+        <% else %>
+         <%= 'CURRENT' %>
+        <% end %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col text-center'>
+      <p><b>ATTN:</b> <%= @invoice.contact %></p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col text-center'>
+      <p><b>Project:</b> <%= @invoice.project %></p>
+    </div>
+  </div>
+</div>
+
+<div class='container p-0'>
+  <div class='card-columns d-flex justify-content-center'>
+    <div class='card w-50'>
+      <div class='card-body'>
+        <h3 class='card-title'>Client:</h3>
+        <p class='card-text'>
+          <%= break_the_lines(company_address(@invoice.company)) %>
+        </p>
+      </div>
+    </div>
+
+    <div class='card w-50'>
+      <div class='card-body text-right'>
+        <h3 class'card-title'>Remit Payment To:</h3>
+          <p class='card-text'><%= break_the_lines(full_remit_address) %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<table class='table table-striped table-bordered'>
+  <thead class='thead-dark'>
+    <tr>
+      <th scope="col">Description</th>
+      <th class='text-center' scope="col">Hours</th>
+      <th class='text-center' scope="col">Rate</th>
+      <th class='text-center' scope="col">Total</th>
+      <% if admin? %>
+        <th>OP</th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @invoice.tasks.each do |task| %>
+      <tr>
+        <td><%= task.description %></td>
+        <td class='text-center'><%= skinny_hours(task.hours) %>
+        <td class='text-center'><%= number_to_currency(task.rate) %></td>
+        <td class='text-center'><%= number_to_currency(task.total) %></td>
+        <% if admin? %>
+          <td><%= link_to 'DELETE', invoice_task_path(task.invoice_id, task), method: :delete, data: { confirm: 'You sure?' } %>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-8'>
+      Notes: <strong><%= @invoice.notes %></strong>
+    </div>
+    <div class='col'>
+      Subtotal:
+    </div>
+    <div class='col text-center'>
+      <%= number_to_currency(@invoice.subtotal) %>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-8'>
+    </div>
+    <div class='col'>
+      Adjustments:
+    </div>
+    <div class='col text-center'>
+      <%= number_to_currency(@invoice.adjustments) %>
+    </div>
+  </div>
+  <br />
+  <div class='row'>
+    <div class='col-8'>
+    </div>
+    <div class='col'>
+      <h4>Total:</h4>
+    </div>
+    <div class='col text-center'>
+      <%= number_to_currency(@invoice.total) %>
+    </div>
+  </div>
+</div>
+</div>
+<br />
+<center>
+    <p><%= button_to 'Print this invoice', invoices_path(@invoice), :onclick => 'window.print();return false;', class: 'noprint btn btn-secondary' %></p>
+</center>

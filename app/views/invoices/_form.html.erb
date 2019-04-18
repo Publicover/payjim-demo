@@ -1,0 +1,59 @@
+<%= form_for @invoice do |f| %>
+
+  <% if @invoice.errors.any? %>
+    <div id="error_explanation">
+      <p>
+        <%= pluralize(@invoice.errors.count, "error") %> prohibited
+        this article from being saved:
+      </p>
+      <% @invoice.errors.full_messages.each do |msg| %>
+        <li><center><%= msg %></li>
+      <% end %>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label 'Project' %>
+    <%= f.text_field :project %>
+  </p>
+
+  <p>
+    <%= f.label 'Billing Start' %>
+    <%= f.date_field :billing_start %>
+  </p>
+
+  <p>
+    <%= f.label 'Billing End' %>
+    <%= f.date_field :billing_end %>
+  </p>
+
+  <p>
+    <%= f.label 'Contact' %>
+    <%= f.text_field :contact %>
+  </p>
+
+  <p>
+    <%= f.label 'Company' %>
+    <%= f.collection_select :company_id, Company.all, :id, :name, prompt: 'Select a company' %>
+  </p>
+
+  <p>
+    <%= f.label 'Notes' %>
+    <%= f.text_field :notes %>
+  </p>
+
+  <p>
+    <%= f.label 'Adjustments' %>
+    <%= f.number_field :adjustments %>
+  </p>
+
+  <p>
+    <%= f.label :paid %>
+    <%= f.check_box :paid %>
+  </p>
+  <div class='row'>
+    <div class='col'>
+      <%= f.submit class: 'btn btn-secondary' %>
+    </div>
+  </div>
+<% end %>
