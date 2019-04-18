@@ -18,7 +18,9 @@ User.create(f_name: 'Joseph', l_name: 'Seedman', email: 'jseedman@gmail.com',
 
 10.times do
   Invoice.create(
+    project: 'Ruby on Rails',
     billing_start: Faker::Date.backward(5),
+    billing_end: Faker::Date.backward(1),
     contact: 'Joseph Seedman',
     company_id: 1,
     project: Faker::Job.key_skill,
@@ -28,7 +30,9 @@ end
 
 10.times do
   Invoice.create(
+    project: 'Web dev',
     billing_start: Faker::Date.backward(5),
+    billing_end: Faker::Date.backward(1),
     contact: 'Joseph Seedman',
     company_id: 1,
     project: Faker::Job.key_skill,
